@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/button_desing.css">
+    <script src="/Js/Documento_datos.js"></script>
+</head>
+<body>
+    <h2>Formulario de datos</h2>
+    <form action="/Js/Documento_datos.js" method="post">
+
+        <label for="Nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="Nombre">
+            <p></p>
+
+        <label for="Apellido">Apellido:</label>
+            <input type="text" name="Apellido" id="Apellido">
+            <p></p>
+
+        <label for="DNI">DNI:</label>
+            <input type="number" name="DNI" id="DNI">
+            <p></p>
+
+        <label for="Fecha">Fecha de nacimiento</label>
+            <input type="date" name="Fecha" id="fecha">
+            <p></p>
+
+        <label for="Domicilio">Domicilio:</label>
+            <input type="text" name="Domicilio" id="domicilio">
+            <p></p>
+
+        <label for="Localidad">Localidad</label>
+            <input type="text" name="Domicilio" id="localidad">
+            <p></p>
+
+            
+        <label for="lenguajes">Idiomas que conoces:</label> <label for="barra">Nivel de conocimiento</label>
+            <p></p>
+            <label for="español">Español</label>
+                <input type="checkbox" name="español" value="español" id="box1">
+                0%<input type="range" name="español" id="rango_es" min="0" max="100" value="0">100%
+                <p></p>
+            <label for="ingles">Ingles</label>
+                <input type="checkbox" name="ingles" value="ingles"  id="box2">
+                0%<input type="range" name="ingles" id="rango_en" min="0" max="100" value="0">100%
+                <br>
+                <p></p>
+            <label for="frances">Frances</label>
+                <input type="checkbox" name="frances" value="frances" id="box3">
+                0%<input type="range" name="frances" id="rango_fr" min="0" max="100" value="0">100%
+                <p></p>
+            <label for="chino">Chino</label>
+                <input type="checkbox" name="chino" value="chino" id="box4">
+                0%<input type="range" name="chino" id="rango_ch" min="0" max="100" value="0">100%
+                <p></p>
+            <input type="submit" onclick="extraer_datos();" class="boton">
+            <input type="reset" value="Borrar" class="boton">
+    </form>
+</body>
+</html>
